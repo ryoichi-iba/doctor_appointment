@@ -116,11 +116,11 @@
 
                        
 
-
+{{-- 
 
                             @foreach(App\Department::all() as $department)
                             <option value="{{$department->department}}" @if($user->department==$department->department)selected @endif>{{$department->department}}</option> 
-                            @endforeach
+                            @endforeach --}}
 
 
                          
