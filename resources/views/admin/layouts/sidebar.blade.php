@@ -22,7 +22,7 @@
                                     <a href="pages/navbar.html"><i class="ik ik-menu"></i><span>Navigation</span> <span class="badge badge-success">New</span></a>
                                 </div> -->
 
-                                @if(auth()->check()&& auth()->user()->role->name === 'admin')
+                                {{-- @if(auth()->check()&& auth()->user()->role->name === 'admin')
                                 <div class="nav-item has-sub">
                                     <a href="javascript:void(0)"><i class="ik ik-layers"></i><span>Department</span> <span class="badge badge-danger"></span></a>
                                     <div class="submenu-content">
@@ -31,9 +31,9 @@
                                        
                                     </div>
                                 </div>
-                                @endif
+                                @endif --}}
 
-                                  @if(auth()->check()&& auth()->user()->role->name === 'admin')
+                                  {{-- @if(auth()->check()&& auth()->user()->role->name === 'admin') --}}
                                 <div class="nav-item has-sub">
                                     <a href="javascript:void(0)"><i class="ik ik-layers"></i><span>Doctor</span> <span class="badge badge-danger"></span></a>
                                     <div class="submenu-content">
@@ -42,9 +42,9 @@
                                        
                                     </div>
                                 </div>
-                                @endif
-                                  @if(auth()->check()&& auth()->user()->role->name === 'doctor')
-                                   <div class="nav-item has-sub">
+                                {{-- @endif --}}
+                                  {{-- @if(auth()->check()&& auth()->user()->role->name === 'doctor') --}}
+                                   {{-- <div class="nav-item has-sub">
                                     <a href="javascript:void(0)"><i class="ik ik-layers"></i><span>Appointment Time</span> <span class="badge badge-danger"></span></a>
                                     <div class="submenu-content">
                                         <a href="{{route('appointment.create')}}" class="menu-item">Create</a>
@@ -63,12 +63,12 @@
                                        
                                     </div>
                                 </div>
-                                @endif
+                                @endif --}}
 
                                
 
 
-                                  @if(auth()->check()&& auth()->user()->role->name === 'admin')
+                                  {{-- @if(auth()->check()&& auth()->user()->role->name === 'admin')
                                  <div class="nav-item has-sub">
                                     <a href="javascript:void(0)"><i class="ik ik-layers"></i><span>Patient Appointment</span> <span class="badge badge-danger"></span></a>
                                     <div class="submenu-content">
@@ -78,7 +78,7 @@
                                     </div>
                                 </div>
                                 
-                                @endif
+                                @endif --}}
 
                                 <div class="nav-item active">
                                     <a onclick="event.preventDefault();

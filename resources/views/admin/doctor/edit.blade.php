@@ -108,7 +108,7 @@
 			</div>
 
             <div class="row">
-                <div class="col-md-6">
+                {{-- <div class="col-md-6">
                     <div class="form-group">
                         <label for="">Specialist</label>
                         <select name="department" class="form-control">
@@ -116,11 +116,11 @@
 
                        
 
-{{-- 
+
 
                             @foreach(App\Department::all() as $department)
                             <option value="{{$department->department}}" @if($user->department==$department->department)selected @endif>{{$department->department}}</option> 
-                            @endforeach --}}
+                            @endforeach
 
 
                          
@@ -136,7 +136,7 @@
                                 @enderror
                         
                     </div>
-                </div>
+                </div> --}}
 
                 <div class="col-md-6">
                     <div class="form-group">

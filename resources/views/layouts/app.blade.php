@@ -58,6 +58,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
+                                        <i class="ik ik-power dropdown-icon"></i>
                                         {{ __('Logout') }}
                                     </a>
 
