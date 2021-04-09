@@ -18,6 +18,8 @@ Route::get('/new-appointment/{doctorId}/{date}', 'FrontendController@show')->nam
 
 Route::get('/dashboard', 'DashboardController@index');
 
+Route::post('/book/appointment', 'FrontendController@store')->name('booking.appointment');
+
 
 Auth::routes();
 

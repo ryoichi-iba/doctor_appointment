@@ -9,7 +9,9 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        dd(Auth::user()->role->name);
+        if(Auth::user()->role->name == 'patient') {
+            return view('home');
+        }
         return view('dashboard');
     }
 }

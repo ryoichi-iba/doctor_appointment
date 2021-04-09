@@ -36,10 +36,10 @@
             
            
             <form action="
-            {{-- {{route('booking.appointment')}} --}}
+            {{route('booking.appointment')}}
             " method="post">@csrf
             <div class="card">
-                {{-- <div class="card-header lead">{{$date}}</div> --}}
+                <div class="card-header lead">{{$date}}</div>
                 <div class="card-body">
                     <div class="row">
                         @foreach($times as $time)
@@ -50,16 +50,11 @@
                                     </span>
                             </label>
                         </div>
-                        {{-- <input type="hidden" name="doctorId" value="{{$doctor_id}}"> --}}
+                        <input type="hidden" name="doctorId" value="{{$doctor_id}}">
                         <input type="hidden" name="appointmentId" value
                         ="{{$time->appointment_id}}">
-                        {{-- <input type="hidden" name="date" value
-                        ="{{$date}}"> --}}
-
-
-
-                        
-                        
+                        <input type="hidden" name="date" value
+                        ="{{$date}}">
                         @endforeach
                     </div>
                 </div>
