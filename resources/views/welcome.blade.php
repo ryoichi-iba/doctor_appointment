@@ -60,7 +60,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                       {{-- @forelse($doctors as $doctor)
+                       @forelse($doctors as $doctor)
                         <tr>
                             <th scope="row">1</th>
                             <td>
@@ -78,7 +78,7 @@
                         </tr>
                         @empty
                         <td>No doctors available today</td>
-                        @endforelse --}}
+                        @endforelse
 
 
                     </tbody>
